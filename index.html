@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>RDC Promotions | Banger Racing</title>
+  <meta name="description" content="RDC Promotions — fixtures, live points, championship standings, drivers and results.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-strip"><span>RDC PROMOTIONS</span><span class="top-tag">BANGER RACING • FIXTURES • RESULTS</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="RDC Promotions home">
+      <span class="brand-mark">RDC</span><span class="brand-text">PROMOTIONS<span>RACING • COMPETITION • COMMUNITY</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#live-points">Live Points</a><a href="#fixtures">Fixtures</a>
+      <a href="#championships">Championships</a><a href="#drivers">Drivers</a><a href="#history">Titles & History</a>
+      <a href="#results">Results</a><a href="#news">News</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR HOME FOR BANGER RACING</p>
+        <h1>RACING<br><em>WITHOUT</em><br>COMPROMISE.</h1>
+        <p class="hero-copy">Welcome to RDC Promotions — your place for meeting information, race results, championship battles and the drivers who make it happen.</p>
+        <div class="hero-actions"><a class="button primary" href="#fixtures">VIEW FIXTURES <span>↗</span></a><a class="button outline" href="#live-points">LIVE POINTS <span>→</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative racing graphic">
+        <div class="checkers"></div><div class="speedline speedline-one"></div><div class="speedline speedline-two"></div>
+        <div class="hero-number">RDC<span>01</span></div>
+        <div class="hero-stamp">RACE DAY<br><b>READY</b></div>
+        <div class="hero-bottom">BANGER RACING <span>•</span> ALL THE ACTION</div>
+      </div>
+      <div class="hero-bottom-bar"><span>THE HOME OF RACE DAY</span><span>STANDINGS • FIXTURES • RESULTS</span></div>
+    </section>
+
+    <section class="quick-grid">
+      <a class="quick-card" href="#live-points"><span class="icon">▤</span><span><b>LIVE POINTS</b><small>Follow the scoreboard</small></span><strong>↗</strong></a>
+      <a class="quick-card" href="#fixtures"><span class="icon">▦</span><span><b>FIXTURES</b><small>Find the next meeting</small></span><strong>↗</strong></a>
+      <a class="quick-card" href="#championships"><span class="icon">♜</span><span><b>CHAMPIONSHIPS</b><small>Track the title race</small></span><strong>↗</strong></a>
+      <a class="quick-card" href="#drivers"><span class="icon">◉</span><span><b>DRIVERS</b><small>Meet the competitors</small></span><strong>↗</strong></a>
+    </section>
+
+    <section class="section" id="live-points">
+      <div class="section-heading"><div><p class="eyebrow">ON THE TRACK</p><h2>LIVE <em>POINTS</em></h2></div><span class="section-note"><span class="live-dot"></span> SCOREBOARD</span></div>
+      <div class="notice"><b>DEMO DATA</b> This starter site uses example entries. Replace them with RDC Promotions results, or connect your Google Sheet in <code>script.js</code>.</div>
+      <div class="table-wrap"><table id="points-table"><thead><tr><th>POS</th><th>NO.</th><th>DRIVER</th><th>CLASS</th><th>POINTS</th></tr></thead><tbody></tbody></table></div>
+      <div class="section-foot"><span>Points shown are example data only.</span><a class="text-link" href="#results">VIEW RESULTS ARCHIVE →</a></div>
+    </section>
+
+    <section class="section split" id="fixtures">
+      <div>
+        <div class="section-heading"><div><p class="eyebrow">SAVE THE DATE</p><h2>UPCOMING <em>FIXTURES</em></h2></div></div>
+        <div id="fixtures-list" class="fixture-list"></div>
+        <p class="small-note">Replace the example meetings with confirmed dates and venues before publishing.</p>
+      </div>
+      <aside class="feature-panel">
+        <p class="eyebrow">RACE DAY INFORMATION</p><h3>EVERYTHING YOU NEED.<br><em>IN ONE PLACE.</em></h3>
+        <p>Meeting details, classes, updates and important announcements can all live here.</p>
+        <a class="button primary" href="#news">LATEST UPDATES ↗</a>
+        <div class="panel-lines"></div>
+      </aside>
+    </section>
+
+    <section class="section" id="championships">
+      <div class="section-heading"><div><p class="eyebrow">THE TITLE BATTLE</p><h2>CHAMPIONSHIP <em>STANDINGS</em></h2></div><span class="section-note">SEASON LEADERBOARD</span></div>
+      <div class="table-wrap"><table id="championship-table"><thead><tr><th>POS</th><th>NO.</th><th>DRIVER</th><th>CHAMPIONSHIP</th><th>POINTS</th><th>GAP</th></tr></thead><tbody></tbody></table></div>
+      <p class="small-note">Example standings are for layout demonstration and are not official results.</p>
+    </section>
+
+    <section class="section" id="drivers">
+      <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE NUMBERS</p><h2>MEET THE <em>DRIVERS</em></h2></div><input id="driver-search" class="search" type="search" placeholder="Search drivers or car numbers…" aria-label="Search drivers"></div>
+      <div class="driver-grid" id="driver-grid"></div>
+    </section>
+
+    <section class="section split history-news">
+      <div id="history">
+        <div class="section-heading"><div><p class="eyebrow">MADE IN RACE DAY</p><h2>TITLES & <em>HISTORY</em></h2></div></div>
+        <div class="history-card"><div class="trophy">★</div><div><h3>HALL OF FAME</h3><p>Celebrate past champions, title winners and memorable seasons.</p><a class="text-link" href="#results">EXPLORE HISTORY →</a></div></div>
+        <div class="history-card"><div class="trophy">01</div><div><h3>PAST CHAMPIONS</h3><p>Add champion names, years, classes and photographs here.</p><a class="text-link" href="#contact">SEND AN UPDATE →</a></div></div>
+      </div>
+      <div id="news">
+        <div class="section-heading"><div><p class="eyebrow">FROM THE PROMOTION</p><h2>LATEST <em>NEWS</em></h2></div></div>
+        <article class="news-card"><span class="news-date">ANNOUNCEMENT</span><h3>WELCOME TO RDC PROMOTIONS ONLINE</h3><p>This is your space for official updates, meeting announcements and championship news.</p><span class="news-placeholder">ADD YOUR FIRST NEWS STORY</span></article>
+        <article class="news-card"><span class="news-date">RACE DAY UPDATE</span><h3>KEEP THIS PAGE UP TO DATE</h3><p>Use this area for schedule changes, event information and important notices.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="section-heading"><div><p class="eyebrow">EVERY LAP COUNTS</p><h2>RESULTS <em>ARCHIVE</em></h2></div></div>
+      <div class="archive-box"><div><b>PAST MEETING RESULTS</b><p>Add a link for each meeting's results spreadsheet or official PDF.</p></div><span class="archive-icon">↗</span></div>
+      <div class="archive-box"><div><b>SEASON SUMMARY</b><p>Keep final championship standings and title results available after the season.</p></div><span class="archive-icon">↗</span></div>
+    </section>
+
+    <section class="contact-band" id="contact"><div><p class="eyebrow">STAY IN THE LOOP</p><h2>FOLLOW <em>RDC PROMOTIONS</em></h2><p>Add your official social media links and contact details here.</p></div><a class="button primary" href="mailto:">ADD CONTACT EMAIL ↗</a></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">RDC <span>PROMOTIONS</span></a><p>RACING • COMPETITION • COMMUNITY</p><div class="footer-links"><a href="#live-points">Live Points</a><a href="#fixtures">Fixtures</a><a href="#championships">Championships</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> RDC Promotions. Replace demo content with verified official information.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
